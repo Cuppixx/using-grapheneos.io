@@ -1,4 +1,4 @@
-# Using GrapheneOS
+# Using [GrapheneOS](https://github.com/GrapheneOS)
 
 Welcome to **Using GrapheneOS**, a personal collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.
 
