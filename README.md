@@ -63,6 +63,7 @@ Chosen to replace proprietary tools and Add, Expand or Replace functionality on 
 | **KDE Connect**     | Cross-device sync and file sharing between Android and Linux desktops |
 | **Mastodon**        | Decentralized social media client |
 | **NewPipe**         | YouTube frontend; ad-free, background playback and downloads |
+| **Obsidian**        | Markdown-based note-taking; syncs across devices via Syncthing-Fork |
 | **Obtainium**       | Install and update FOSS apps directly from GitHub |
 | **OpenReads**       | Lightweight book-/read-tracker |
 | **OpenScan**        | Scan documents to PDF |
@@ -80,7 +81,7 @@ Used when no equivalent FOSS app meets functionality needs — trade-offs acknow
 
 | App                         | Description |
 |-----------------------------|-------------|
-| **Banking**                 |  My local banking app - not listed by name for obvious reasons |
+| **Banking**                 |  My local banking app — not listed by name for obvious reasons |
 | **Crunchyroll**             |  |
 | **Discord**                 | Used for social reasons (contacts, gaming and dev communities) |
 | **Joyn**                    | TV/streaming app for live content |
@@ -88,7 +89,6 @@ Used when no equivalent FOSS app meets functionality needs — trade-offs acknow
 | **Malwarebytes**            | On-demand malware scanning for peace of mind |
 | **Mobile Games**            | A few games for when I'm traveling (Gwent, KARDS, Fallout Shelter, etc. ...) |
 | **Netflix**                 |  |
-| **Obsidian**                | Markdown-based note-taking; syncs across devices via Syncthing-Fork |
 | **Paypal**                  |  |
 | **Play Games / Play Store** | Sandboxed via GOS |
 | **Proton Calendar**         | Encrypted calendar; privacy-first, seamlessly syncs across devices |
@@ -115,6 +115,8 @@ Speaking of Files: one of the things I really like about GrapheneOS is that it d
 
 The rest of the built-in apps generally do their job well enough that I haven't felt the need to replace them.
 
+I did however install **OpenScan** to complement the default **Camera** app, since GrapheneOS doesn't include document scanning out of the box. Beyond that, the camera app works fine for my needs. That said, I'm not a photography enthusiast or heavy picture-taker — so if you have a favorite camera app with better image quality or features that meet your requirements, don't hesitate to replace the default. GrapheneOS's camera is solid for basic use, but it's not trying to compete with flagship camera apps.
+
 Special mention goes to **Vanadium**, the hardened default browser. It strikes a great balance between usability and security. I haven’t felt the need to replace it with something like Brave — which offer more features, sure, but also comes with more settings bloat. Vanadium just works, securely and comfortably.
 
 Among the third-party FOSS apps, there’s a core group I consider essential for a security-hardened setup:
@@ -128,5 +130,19 @@ These four cover a lot of bases when it comes to digital hygiene and peace of mi
 
 GrapheneOS doesn’t ship with voice input out of the box, and most keyboards either require network access or lack features. That’s why I use **FUTO Keyboard** — it offers offline speech-to-text, solid typing feel, and a fully local privacy model. It’s one of the few keyboards that hits the sweet spot of usability and privacy.
 
+**Obsidian + Syncthing-Fork** deserves a special mention as one of the best privacy-respecting productivity setups I've found. Instead of paying for Obsidian's premium sync service, I use Syncthing-Fork to handle vault synchronization across all my devices — completely free, peer-to-peer, and with no cloud middleman. You get full control: sync your entire vault, cherry-pick specific folders, or set up multiple sync configurations. It's fast, reliable, and keeps everything local-first. Add plugins like Excalidraw for visual thinking and Kanban boards for task management, and you've got a surprisingly powerful low-overhead system for planning, mapping ideas, and staying organized — all without recurring subscriptions or third-party servers touching your data.
 
+**Tailscale**, **KDE Connect**, and **Syncthing-Fork** form a powerful, privacy-respecting trinity for seamless device interaction, file sharing, and remote access. Tailscale creates a secure mesh VPN across all your devices — phone, laptop, desktop, or server — allowing direct, encrypted communication over the internet or local network, without requiring port forwarding or exposing devices publicly. KDE Connect bridges Android and Linux devices over the same network (or via Tailscale), enabling clipboard sync, file transfers, notifications, and even remote input, making day-to-day phone-to-desktop integration smooth and convenient. Syncthing-Fork handles continuous, peer-to-peer file synchronization over local networks or Tailscale, keeping folders in sync between devices in a fully encrypted, self-hosted way, ideal for backups, project sharing, or media libraries. Together, these three apps replace many proprietary cloud services, providing a fully local, encrypted, and self-controlled ecosystem for file sharing, device connectivity, and remote access.
 
+**Thunderbird** is still relatively new on mobile as of writing this. It merged with **K-9 Mail**, though both remain available as separate apps. While Thunderbird is coming along nicely, if you feel dissatisfied or just want to explore your options, K-9 Mail is still actively maintained and worth considering — in fact, some users may find it even more polished for mobile use at this stage.
+
+A few other FOSS apps that really impressed me:
+
+- **NewPipe** is an excellent YouTube frontend — works great overall, though it can get a bit clunky when routing through a VPN.
+- **OpenReads** was a pleasant surprise; I'd never used a book-tracking app before, but if you read regularly, it's absolutely worth trying.
+- **Organic Maps** — as someone who relied exclusively on Google Maps for years, I was genuinely surprised by how well it performed.
+
+All three are solid enough that I'd recommend them for daily use, even if you're not running GrapheneOS.
+
+Among the proprietary apps, many are essential — online banking, contactless payments, and communication tools are hard to avoid. Others, like streaming services or mobile games, are entirely optional depending on your lifestyle. Then there are apps that fall somewhere in between, where your needs may vary: Proton Calendar and Tailscale are good examples, though both are among the most privacy-respecting proprietary options available.
+But the one app I haven't found a satisfactory replacement for is **Spotify**. If you have Spotify Premium, it's hands down the best music streaming experience on mobile — nothing else comes close in terms of library size, discovery features, and overall usability. Without Premium, though, the mobile app is nearly unusable. If you're already paying for it, there's no better option out there.
