@@ -2,7 +2,7 @@
 
 Welcome to **Using GrapheneOS**, a personal collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.
 
-While the web is full of reviews on social media, this repo aims to cut through some of the noise and give yet another, user-level perspective.
+While the web is full of reviews, this repo aims to cut through some of the noise and give yet another, user-level perspective.
 I’ll cover the open-source apps I rely on, the commercial software I haven’t found good open-source replacements for, the settings and tweaks I personally like, and even the small annoyances that come up along the way.
 
 Whether you're considering switching to GrapheneOS, already jumped ship, or just curious about using a _privacy-focused, de-googled Android fork_ — this hopefully helps to get some insights.
@@ -20,79 +20,82 @@ Before getting into the first major topic, I want to clear up a common misconcep
 
 Yes, GrapheneOS is built with strong security and privacy principles at its core — but that doesn’t mean you _must_ give up Google services or only use open-source apps to enjoy it. In fact, **you can absolutely use GrapheneOS while still relying on Google apps and other proprietary software**, and it works just fine.
 
-I personally use GrapheneOS in a pretty casual way. I do appreciate the built-in privacy and security features, but I'm also perfectly fine using the Google Play Store — thanks to GrapheneOS’s _sandboxed Google Play compatibility layer_ — for a good chunk of my apps.
+I personally use GrapheneOS in a pretty casual way. I do appreciate the built-in privacy and security features, but I'm also perfectly fine with using the Google Play Store — thanks to GrapheneOS’s _sandboxed Google Play compatibility layer_ — for a good chunk of my apps.
 
-But the **number one reason** I stick with GrapheneOS — tho this applies to most custom Android OSes — is how **clean** it is. No bloat, no preinstalled junk I didn’t ask for (and can't remove), no forced use of specific apps. Just a fast, minimalist system that stays out of my way. And best of all, no more mysterious background processes eating up resources with no explanation. **My phone runs what I tell it to run — nothing more, nothing less**.
+But the **number one reason** I stick with GrapheneOS — tho this applies to most custom Android OSes — is how **clean** it is. No bloat, no preinstalled junk I didn’t ask for (and can't remove - looking at you, Facebook) and no forced usage of certain apps. Just a fast, minimalist system that stays out of my way. And best of all, no more mysterious background processes eating up resources with no explanation. **My phone runs what I tell it to run — nothing more, nothing less**.
 
 ## 📦 Apps I Use – Overview
 
-Here’s a quick breakdown of all the apps I currently use on my GrapheneOS device, what category they fall into, and what I use them for. This list includes both FOSS and proprietary apps.
+Here’s a quick breakdown of all the apps I currently use on my GrapheneOS device, what category they fall into, and what I use them for.
 
 ### 🟩 Native GrapheneOS Apps
 
 These are the system apps that come pre-installed with GrapheneOS. They're sandboxed, secure, and cover most basic functions.
 
-- **App Store** – Used for installing trusted apps (via GOS's "Apps" app, including sandboxed Play Services)
-- **Auditor** – Verifies device integrity and security
-- **Calculator**
-- **Camera** – Secure default camera app, though lacking features like document scanning
-- **Clock** – Alarm, timer, stopwatch, and world clock
-- **Contacts**
-- **Files** – Basic file manager with storage access framework
-- **Gallery** – View local media (photos, videos)
-- **Info** – System and device information viewer
-- **Messaging**
-- **PDF Reader**
-- **Settings**
-- **Telephone**
-- **Vanadium** – Hardened browser based on Chromium, optimized for privacy
+| App            | Description |
+|----------------|-------------|
+| **App Store**  | Install trusted - core - apps (including sandboxed Play Services). Very limited otherwise |
+| **Auditor**    | Verifies device integrity and security |
+| **Calculator** |  |
+| **Camera**     | Secure default camera app; lacking some features like document scanning |
+| **Clock**      | Alarm, timer, stopwatch, and world clock |
+| **Contacts**   |  |
+| **Files**      | Basic file manager with storage access framework |
+| **Gallery**    | Very bare bones, lacking most features |
+| **Info**       |  |
+| **Messaging**  |  |
+| **PDF Reader** |  |
+| **Settings**   |  |
+| **Telephone**  |  |
+| **Vanadium**   | Hardened browser based on Chromium; optimized for privacy |
 
 ### 🟩 OpenSource Apps
 
-Chosen to replace proprietary tools or add functionality missing from GrapheneOS.
+Chosen to replace proprietary tools and Add, Expand or Replace functionality on GrapheneOS.
 
-- **Aegis** – 2FA code manager; secure, open source alternative to Google Authenticator
-- **AvesLibre** – Lightweight and privacy-friendly image/video viewer
-- **Bitwarden** – Password manager; secure cloud sync with open source backend
-- **FUTO Keyboard** – Privacy-respecting keyboard alternative; no network access
-- **KDE Connect** – Cross-device sync and file sharing between Android and Linux desktops
-- **Mastodon** – Decentralized social media client
-- **NewPipe** – YouTube front-end with no ads, background playback, and downloads
-- **Obtainium** – Auto-update FOSS apps from GitHub, F-Droid, etc. outside app stores
-- **OpenReads** – Lightweight eBook/PDF reader (alternative to proprietary readers)
-- **OpenScan** – Scan documents to PDF; chosen because the stock Camera app lacks scanning
-- **OpenTracks** – GPS tracking for workouts and trips; fully offline
-- **Orbot** – Tor routing for apps; useful for privacy or circumventing censorship
-- **Organic Maps** – Offline maps and navigation; ideal for privacy-first users
-- **Proton Calendar** – Encrypted calendar sync with Proton services
-- **Syncthing-Fork** – Peer-to-peer file sync; local-first, no cloud needed
-- **Termux** – Terminal emulator and Linux environment; powerful for scripting or sysadmin tasks
-- **Thunderbird** – Full-featured email client; FOSS, cross-platform (note: Android version still evolving)
-- **Twire** – Open source Twitch client; ad-free and privacy-respecting
+| App                 | Description |
+|---------------------|-------------|
+| **Aegis**           | 2FA code manager; secure, open source alternative to Google Authenticator |
+| **AvesLibre**       | Lightweight and privacy-friendly gallery |
+| **Bitwarden**       | Password manager; secure cloud sync with open source backend |
+| **Breezy Weather**  | Reliable weather app |
+| **FUTO Keyboard**   | Privacy-respecting keyboard; no network access and local speech to text AI |
+| **KDE Connect**     | Cross-device sync and file sharing between Android and Linux desktops |
+| **Mastodon**        | Decentralized social media client |
+| **NewPipe**         | YouTube frontend; ad-free, background playback and downloads |
+| **Obtainium**       | Install and update FOSS apps directly from GitHub |
+| **OpenReads**       | Lightweight book-/read-tracker |
+| **OpenScan**        | Scan documents to PDF |
+| **OpenTracks**      | GPS tracking for workouts and trips |
+| **Orbot**           | Tor routing for apps; useful for privacy or circumventing censorship |
+| **Organic Maps**    | Offline maps and navigation |
+| **Syncthing-Fork**  | Peer-to-peer file sync; local-first, no cloud needed |
+| **Termux**          | Terminal emulator and Linux environment; powerful automation and admin tasks |
+| **Thunderbird**     | Full-featured, cross-platform email client |
+| **Twire**           | Open source Twitch client |
 
 ### 🔒 Proprietary / Closed Source Apps
 
 Used when no equivalent FOSS app meets functionality needs — trade-offs acknowledged.
 
-- **Crunchyroll** – Streaming anime; no reliable FOSS front-end
-- **Discord** – Communication app; unfortunately no fully featured open alternative
-- **Fallout Shelter** – Mobile game; included for fun
-- **Gwent** – Card game; proprietary but no open version exists
-- **Joyn** – TV/streaming app for live content
-- **KARDS** – Online WWII card game
-- **Loxone** – Smart home control app; needed for existing home setup
-- **Malwarebytes** – On-demand scanning for peace of mind (not always running)
-- **Netflix** – Streaming video; no workaround for DRM content
-- **Obsidian** – Markdown-based note-taking; syncs across devices (uses proprietary plugins)
-- **Paypal** – Financial app; no practical alternative for certain payments
-- **Play Games / Play Store** – Installed sandboxed via GOS to support games and some services (e.g. login in Pokemon Go)
-- **Pokemon Go** – AR game; requires Google Play Services (sandboxed)
-- **Spotify** – Music streaming; no full-featured FOSS client for offline/download
-- **Tailscale** – Mesh VPN; used for remote access and secure networking
-- **Teams** – Required for work communication; no compatible FOSS option
-- **WhatsApp** – Used for social reasons (contacts, family); reluctantly used due to network effect
-- **Banking App** – Proprietary app required for managing bank account
-- **Breeze Weather** – Reliable weather app with good UI and data
+| App                         | Description |
+|-----------------------------|-------------|
+| **Banking**                 |  My local banking app - not listed by name for obvious reasons |
+| **Crunchyroll**             |  |
+| **Discord**                 | Used for social reasons (contacts, gaming and dev communities) |
+| **Joyn**                    | TV/streaming app for live content |
+| **Loxone**                  | Smart home / security control app; work requirement |
+| **Malwarebytes**            | On-demand malware scanning for peace of mind |
+| **Mobile Games**            | A few games for when I'm traveling (Gwent, KARDS, Fallout Shelter, etc. ...) |
+| **Netflix**                 |  |
+| **Obsidian**                | Markdown-based note-taking; syncs across devices via Syncthing-Fork |
+| **Paypal**                  |  |
+| **Play Games / Play Store** | Sandboxed via GOS |
+| **Proton Calendar**         | Encrypted calendar; privacy-first, seamlessly syncs across devices |
+| **Spotify**                 |  |
+| **Tailscale**               | Mesh VPN; used for remote access and secure networking |
+| **Teams**                   | Work requirement |
+| **WhatsApp**                | Used for social reasons (contacts, family) |
 
 ## 🧠 Apps I Use - Thoughts
 
@@ -112,7 +115,7 @@ Speaking of Files: one of the things I really like about GrapheneOS is that it d
 
 The rest of the built-in apps generally do their job well enough that I haven't felt the need to replace them.
 
-Special mention goes to **Vanadium**, the hardened default browser. It strikes a great balance between usability and security. I haven’t felt the need to replace it with something like Brave or Firefox Hardened — those offer more features, sure, but they also come with more settings bloat. Vanadium just works, securely and comfortably.
+Special mention goes to **Vanadium**, the hardened default browser. It strikes a great balance between usability and security. I haven’t felt the need to replace it with something like Brave — which offer more features, sure, but also comes with more settings bloat. Vanadium just works, securely and comfortably.
 
 Among the third-party FOSS apps, there’s a core group I consider essential for a security-hardened setup:
 
