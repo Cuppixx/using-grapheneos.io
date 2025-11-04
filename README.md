@@ -1,4 +1,11 @@
-# Using [GrapheneOS](https://github.com/GrapheneOS)
+# Using [GrapheneOS](https://grapheneos.org)
+
+<p align="center">
+  <a href="https://grapheneos.org"><img src="https://img.shields.io/badge/GrapheneOS-blue" /></a>
+  <a href="https://github.com/GrapheneOS"><img src="https://img.shields.io/badge/Source-blue" /></a>
+  <a href="https://grapheneos.org/releases#2025102800"><img src="https://img.shields.io/badge/On%20GOS%20Build-2025102800-blue" /></a>
+  <img src="https://img.shields.io/github/last-commit/Cuppixx/Using-GrapheneOS?label=Using%20GrapheneOS%20last%20edited&color=blue" />
+</p>
 
 Welcome to **Using GrapheneOS**, a personal collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.
 
