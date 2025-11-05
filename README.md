@@ -1,18 +1,3 @@
-<head>
-  <style>
-    body {
-        background-color: white;
-        color: black;
-    }
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: #121212;
-            color: #eee;
-        }
-    }
-  </style>
-</head>
-
 # Using [GrapheneOS](https://grapheneos.org)
 
 <p align="center">
