@@ -8,7 +8,7 @@
 </p>
 
 <div align="justify">
-Welcome to <b>Using GrapheneOS</b>, a personal collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.<br><br>
+Welcome to <b>Using GrapheneOS</b>, a collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.<br><br>
 While the web is full of reviews, this repo aims to cut through some of the noise and give yet another, user-level perspective.
 I'll cover the open-source apps I rely on, the commercial software I haven't found good <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> or open-source replacements for, the settings and tweaks I personally like, and even the small annoyances that come up along the way.<br><br>
 Whether you're considering switching to GrapheneOS, already jumped ship, or just curious about using a <i>privacy-focused, de-googled Android fork</i> — this hopefully helps to get some insights.
