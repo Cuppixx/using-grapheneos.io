@@ -33,7 +33,7 @@ Yes, GrapheneOS is built with strong security and privacy principles at its core
 I personally use GrapheneOS in a pretty casual way. I do appreciate the built-in privacy and security features, but I'm also perfectly fine with using the Google Play Store — thanks to GrapheneOS's <i>sandboxed Google Play compatibility layer</i> — for a good chunk of my apps.
 <br><br>
 But the <b>number one reason</b> I stick with GrapheneOS — tho this applies to most custom Android OSes — is how <b>clean</b> it is. No bloat, no preinstalled junk I didn't ask for and can't remove (looking at you Facebook), and no forced usage of certain apps. Just a fast, minimalist system that stays out of my way. And best of all, no more mysterious background processes eating up resources with no explanation. <b>My phone runs what I tell it to run — nothing more, nothing less</b>.
-<div align="justify">
+</div>
 
 ## 📦 Apps I Use – Overview
 
@@ -98,8 +98,8 @@ As for some of the other native apps:
 <br><br>
 <ul>
 <li>I've never had much use for the <b>Auditor</b> or <b>Info</b> apps, tho they're nice to have.</li>
-<li>The default <b>Gallery</b> app is a rough experience — basic and clunky.<br>Thus <b>AvesLibre</b> has become my go-to media viewer. It feels more like a desktop app, which is a vibe I also appreciate in the <b>Files</b> app.</li>
-<li>One of the things I really like about GrapheneOS is that it doesn't try to hide the file system.<br>With the default <b>Files</b> app, you can easily browse the contents of your device without artificial limitations. That's rare these days.</li>
+<li>The default <b>Gallery</b> app is a rough experience — basic and clunky. Thus <b>AvesLibre</b> (or just Aves) has become my go-to media viewer. It feels more like a desktop app, which is a vibe I also appreciate in the <b>Files</b> app.</li>
+<li>One of the things I really like about GrapheneOS is that it doesn't try to hide the file system. With the default <b>Files</b> app, you can easily browse the contents of your device without artificial limitations. That's rare these days.</li>
 </ul>
 The rest of the built-in apps generally do their job well enough that I haven't felt the need to replace them.
 <br><br>
@@ -126,9 +126,9 @@ GrapheneOS doesn't ship with voice input out of the box, and most keyboards eith
 Other open-source apps that really impressed me:
 <br><br>
 <ul>
-<li><b>NewPipe</b> is an excellent YouTube frontend — works great overall,<br>though it can get a bit clunky when routing through a VPN.</li>
-<li><b>OpenReads</b> was a pleasant surprise;<br>I'd never used a book-tracking app before, but if you read regularly, it's absolutely worth trying.</li>
-<li><b>Organic Maps</b> — as someone who relied exclusively on Google Maps for years,<br>I was genuinely surprised by how well it performed.</li>
+<li><b>NewPipe</b> is an excellent YouTube frontend — works great overall, though it can get a bit clunky when routing through a VPN.</li>
+<li><b>OpenReads</b> was a pleasant surprise; I'd never used a book-tracking app before, but if you read regularly, it's absolutely worth trying.</li>
+<li><b>Organic Maps</b> — as someone who relied exclusively on Google Maps for years, I was genuinely surprised by how well it performed.</li>
 </ul>
 These three (but really, just all of the above mentioned apps) are solid enough that I'd recommend them for daily use, even if you're not running GrapheneOS.
 <br><br>
@@ -195,5 +195,3 @@ But the one app I haven't found a satisfactory replacement for is <b>Spotify</b>
 <a href="https://tailscale.com/"><img src="https://img.shields.io/badge/Tailscale-blue" /></a>
 </p>
 </div>
-
-## Checkout:
