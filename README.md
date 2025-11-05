@@ -16,10 +16,10 @@ Whether you're considering switching to GrapheneOS, already jumped ship, or just
 
 ## 🧭 What You'll Find Here
 
-- A curated list of all the apps I use and what I use them for
-- My personal GrapheneOS setup: settings, features, and configuration
+- A curated list of all the apps I use
+- ~~My personal GrapheneOS settings and configurations~~
 - Some notes on what works well and what doesn't
-- Some tips, workarounds, and mini-guides based on experience
+- Some tips, ~~workarounds~~, and mini-guides based on experience
 
 ### ⚠️ Heads-Up
 
