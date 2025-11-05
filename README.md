@@ -161,7 +161,7 @@ The apps are presented in order of personal priority.<br><br>
 | **Spotify**                 |  |
 | **Netflix**                 |  |
 | **Discord**                 | Gaming, Dev and Twitch communities |
-| **Malwarebytes**            | On-demand malware scanning for peace of mind |
+| **Malwarebytes**            | On-demand malware scanning |
 | **Loxone**                  | Smart home / security control app; work requirement |
 | **MS Teams**                | Work requirement |
 | **Mobile Games**            | A few games for when I'm traveling (Gwent, KARDS, Fallout Shelter, etc. ...) |
