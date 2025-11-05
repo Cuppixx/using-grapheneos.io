@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using GrapheneOS</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #24292e;
+            --link-color: #0366d6;
+            --border-color: #e1e4e8;
+            --code-bg: #f6f8fa;
+            --table-header-bg: #f6f8fa;
+            --badge-bg: #0366d6;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0d1117;
+                --text-color: #c9d1d9;
+                --link-color: #58a6ff;
+                --border-color: #30363d;
+                --code-bg: #161b22;
+                --table-header-bg: #161b22;
+                --badge-bg: #1f6feb;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.25em;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .badge {
+            background-color: var(--badge-bg);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 0.875em;
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            font-weight: 600;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        .warning {
+            background-color: rgba(255, 200, 0, 0.1);
+            border-left: 4px solid #ffc800;
+            padding: 16px;
+            margin: 20px 0;
+        }
+
+        .warning h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Using <a href="https://grapheneos.org">GrapheneOS</a></h1>
+
+        <div class="badges">
+            <a href="https://grapheneos.org"><span class="badge">GrapheneOS</span></a>
+            <a href="https://github.com/GrapheneOS"><span class="badge">Source</span></a>
+            <a href="https://grapheneos.org/releases#2025102800"><span class="badge">On GOS Build 2025102800</span></a>
+            <a href="https://github.com/Cuppixx/using-grapheneos.io"><span class="badge">Using GrapheneOS last edited</span></a>
+        </div>
+
+        <p>Welcome to <strong>Using GrapheneOS</strong>, a collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.</p>
+
+        <p>While the web is full of reviews, this repo aims to cut through some of the noise and give yet another, user-level perspective. I'll cover the open-source apps I rely on, the commercial software I haven't found good <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> or open-source replacements for, the settings and tweaks I personally like, and even the small annoyances that come up along the way.</p>
+
+        <p>Whether you're considering switching to GrapheneOS, already jumped ship, or just curious about using a <em>privacy-focused, de-googled Android fork</em> — this hopefully helps to get some insights.</p>
+
+        <h2>🧭 What You'll Find Here</h2>
+
+        <ul>
+            <li>A curated list of all the apps I use</li>
+            <li><del>My personal GrapheneOS settings and configurations</del></li>
+            <li>Some notes on what works well and what doesn't</li>
+            <li>Some tips, <del>workarounds</del>, and mini-guides based on experience</li>
+        </ul>
+
+        <div class="warning">
+            <h3>⚠️ Heads-Up</h3>
+            <p>Before getting into the first major topic, I want to clear up a common misconception about GrapheneOS. While it's well-known as a <em>privacy-focused Android fork</em>, <strong>you don't need to be a hardcore privacy enthusiast to benefit from using it</strong>.</p>
+
+            <p>Yes, GrapheneOS is built with strong security and privacy principles at its core — but that doesn't mean you <em>must</em> give up Google services or only use open-source apps to enjoy it. In fact, <strong>you can absolutely use GrapheneOS while still relying on Google apps and other proprietary software</strong>, and it works just fine.</p>
+
+            <p>I personally use GrapheneOS in a pretty casual way. I do appreciate the built-in privacy and security features, but I'm also perfectly fine with using the Google Play Store — thanks to GrapheneOS's <em>sandboxed Google Play compatibility layer</em> — for a good chunk of my apps.</p>
+
+            <p>But the <strong>number one reason</strong> I stick with GrapheneOS — tho this applies to most custom Android OSes — is how <strong>clean</strong> it is. No bloat, no preinstalled junk I didn't ask for and can't remove (looking at you Facebook), and no forced usage of certain apps. Just a fast, minimalist system that stays out of my way. And best of all, no more mysterious background processes eating up resources with no explanation. <strong>My phone runs what I tell it to run — nothing more, nothing less</strong>.</p>
+        </div>
+
+        <h2>🛠️ Installation Is Surprisingly Simple</h2>
+
+        <p>I was honestly <strong>surprised by how smoothly the GrapheneOS installation process went</strong>. I expected it to be complicated — especially since this was my first time flashing a custom Android ROM — but it turned out to be far more approachable than I thought. The official <a href="https://grapheneos.org/install/web">Web Installer</a> makes the whole thing simple: it runs right in your browser and walks you through unlocking your bootloader, flashing the OS, and locking it again once everything's done.</p>
+
+        <p>The written instructions on the official website are clear and detailed, though I'll admit I personally find visual guides easier to follow than text-based ones. Luckily, there are plenty of excellent video walkthroughs online that make the process even clearer. All in all, it took me about one to two hours to get everything set up — not bad at all for a first-time install.</p>
+
+        <p>It left me with a good impression overall: the process is straightforward, well-documented, and works reliably even for beginners.</p>
+
+        <h2>📦 Apps I Use – Overview</h2>
+
+        <p>Here's a quick breakdown of all the apps I currently use on my GrapheneOS device, what category they fall into, and why I use them.</p>
+
+        <h3>🟩 Native GrapheneOS Apps</h3>
+
+        <p>These are the system apps that come pre-installed with GrapheneOS. They're sandboxed, secure, and cover most basic functions. The pre-installed apps are kept deliberately minimal — providing only the core functionality necessary for a secure system baseline — because GrapheneOS prioritizes reducing the attack surface, avoiding unnecessary components, and ensuring that each app is sandboxed and permission-limited by default.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>App</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>App Store</strong></td>
+                    <td>Installs a <strong>limited</strong> set of trusted core apps (includes sandboxed Google Play)</td>
+                </tr>
+                <tr>
+                    <td><strong>Auditor</strong></td>
+                    <td>Verifies device integrity and security</td>
+                </tr>
+                <tr>
+                    <td><strong>Calculator</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Camera</strong></td>
+                    <td>Secure camera app with standard functionality; does not include document scanning</td>
+                </tr>
+                <tr>
+                    <td><strong>Clock</strong></td>
+                    <td>Alarm, timer, stopwatch, and world clock</td>
+                </tr>
+                <tr>
+                    <td><strong>Contacts</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Files</strong></td>
+                    <td>File manager with storage access framework</td>
+                </tr>
+                <tr>
+                    <td><strong>Gallery</strong></td>
+                    <td>Barebones gallery app; clunky interface</td>
+                </tr>
+                <tr>
+                    <td><strong>Info</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Messaging</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>PDF Reader</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Settings</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Telephone</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Vanadium</strong></td>
+                    <td>Hardened browser based on Chromium; optimized for privacy</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><em>You can find additional information on GOS and its <a href="https://grapheneos.org/features">features</a> on their webpage.</em></p>
+
+        <h3>🟩 OpenSource Apps</h3>
+
+        <p>This section lists the apps I use to replace proprietary tools or to expand and enhance functionality on GrapheneOS. All apps mentioned here are fully open-source (partial exception: <em>Bitwarden</em>, whose official clients are not fully open-source unless self-hosted), making them inherently more <strong>transparent</strong>, <strong>secure</strong>, and <strong>privacy-focused</strong> — so I won't repeat this for every individual app.</p>
+
+        <p>The apps are presented in order of personal priority.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>App</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>APK Manager</td>
+                    <td><strong>Obtainium</strong></td>
+                    <td>Install and update FOSS/open-source apps directly from GitHub</td>
+                </tr>
+                <tr>
+                    <td>2FA Code Manager</td>
+                    <td><strong>Aegis</strong></td>
+                    <td>Alternative to Google Authenticator</td>
+                </tr>
+                <tr>
+                    <td>Password Manager</td>
+                    <td><strong>Bitwarden</strong></td>
+                    <td>Secure cloud sync with open-source backend</td>
+                </tr>
+                <tr>
+                    <td>Gallery</td>
+                    <td><strong>AvesLibre</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Document Scanner</td>
+                    <td><strong>OpenScan</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td><strong>FUTO Keyboard</strong></td>
+                    <td>Offline speech-to-text, keeping your data fully local</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><strong>Thunderbird</strong></td>
+                    <td>Full-featured, cross-platform mail client</td>
+                </tr>
+                <tr>
+                    <td>File Sync Tool</td>
+                    <td><strong>Syncthing-Fork</strong></td>
+                    <td>Peer-to-peer file sync; local-first, no cloud required</td>
+                </tr>
+                <tr>
+                    <td>Network Tool</td>
+                    <td><strong>Orbot</strong></td>
+                    <td><a href="https://www.torproject.org/">Tor</a> routing for apps</td>
+                </tr>
+                <tr>
+                    <td>Device Integration</td>
+                    <td><strong>KDE Connect</strong></td>
+                    <td>Cross-device sync and file sharing between Android and Linux</td>
+                </tr>
+                <tr>
+                    <td>Terminal</td>
+                    <td><strong>Termux</strong></td>
+                    <td>Linux environment and terminal emulator</td>
+                </tr>
+                <tr>
+                    <td>Book Tracker</td>
+                    <td><strong>OpenReads</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Youtube</td>
+                    <td><strong>NewPipe</strong></td>
+                    <td>Ad-free YouTube and Soundcloud frontend</td>
+                </tr>
+                <tr>
+                    <td>Weather App</td>
+                    <td><strong>Breezy Weather</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Maps</td>
+                    <td><strong>Organic Maps</strong></td>
+                    <td>Alternative to Google Maps</td>
+                </tr>
+                <tr>
+                    <td>Streaming</td>
+                    <td><strong>Twire</strong></td>
+                    <td>Alternative Twitch client</td>
+                </tr>
+                <tr>
+                    <td>Fitness Tracker</td>
+                    <td><strong>OpenTracks</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Social Media</td>
+                    <td><strong>Mastodon</strong></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🧠 OpenSource and Native GrapheneOS Apps - Thoughts</h3>
+
+        <p>The default <strong>GrapheneOS App Store</strong> isn't really an "app store" in the traditional sense. Its main purpose is to update GrapheneOS system apps and optionally install sandboxed Google Play Services. Yes, you <em>can</em> install <a href="https://accrescent.app/">Accrescent</a> through it — another FOSS app store — but personally, I've never been fully satisfied with either F-Droid or Accrescent. That's why I use <strong>Obtainium</strong>. Tho it's not technically an "app store" either and functions more like a lightweight package manager that pulls APKs directly from trusted upstream sources like GitHub or GitLab. It gives me full control over updates and sources, without relying on the middlemen.</p>
+
+        <p>As for some of the other native apps: I've never had much use for the <strong>Auditor</strong> or <strong>Info</strong> apps, tho they're nice to have. The default <strong>Gallery</strong> app is a rough experience — basic and clunky. Thus <strong>AvesLibre</strong> (or just Aves) has become my go-to media viewer. It feels more like a desktop app, which is a vibe I also appreciate in the native Files app. With the <strong>Files</strong> app, you can easily browse the contents of your device without artificial limitations. Which is one of the things I really like about GrapheneOS is that it doesn't try to hide the file system. You can browse hidden and low-level app contents just like you would your normal files.</p>
+
+        <p>The rest of the built-in apps generally do their job well enough that I haven't felt the need to replace them.</p>
+
+        <p>I did however install <strong>OpenScan</strong> to complement the default <strong>Camera</strong> app, since GrapheneOS doesn't include document scanning out of the box. Beyond that, the camera app works fine for my needs. That said, I'm not a photography enthusiast or heavy picture-taker — so if you have a favorite camera app with better image quality or features that meet your requirements, don't hesitate to replace the default. GrapheneOS's camera is solid for basic use, but it's not trying to compete with flagship camera apps.</p>
+
+        <p>Special props go to <strong>Vanadium</strong>, the hardened default browser. It strikes a great balance between usability and security. I haven't felt the need to replace it with something like Brave — which offer more features, sure, but also comes with more settings bloat. Vanadium just works, securely and comfortably.</p>
+
+        <p>Among the third-party open-source apps, there's a core group I consider essential for a security-hardened setup:</p>
+
+        <ul>
+            <li><strong>Aegis</strong> – for managing 2FA codes securely</li>
+            <li><strong>Bitwarden</strong> – for password management, 2FA codes and secure storage</li>
+            <li><strong>Orbot</strong> – for routing traffic through Tor when needed</li>
+        </ul>
+
+        <p>These three cover a lot of bases when it comes to digital hygiene and peace of mind.</p>
+
+        <p>Orbot is an app you can probably skip if you don't need secure routing, and Aegis isn't necessary unless you use 2FA codes — but Bitwarden should really be a staple in every setup. I personally use Aegis alongside Bitwarden so that if something ever happened to my Bitwarden account, my passwords and 2FA codes wouldn't both be lost at the same time. Plus, I just really like Aegis's design — it feels clean and straightforward. In the end, it mostly comes down to personal preference.</p>
+
+        <p>GrapheneOS doesn't ship with voice input out of the box, and most keyboards either require network access or lack features. That's why I use <strong>FUTO Keyboard</strong> — it offers offline speech-to-text, solid typing feel, and keeps your data fully local. It's one of the few keyboards that hits the sweet spot of usability and privacy.</p>
+
+        <p><strong>Thunderbird</strong> is still relatively new on mobile as of writing this. It merged with <strong>K-9 Mail</strong>, though both remain available as separate apps. While Thunderbird is coming along nicely, if you feel dissatisfied or just want to explore your options, K-9 Mail is still actively maintained and worth considering — in fact, some users may find it even more polished for mobile at this stage.</p>
+
+        <p><strong>Termux</strong> adds a full-fledged Linux terminal environment into your phone, capable of running real command-line tools, programming languages, and even lightweight servers — all without root access. With its built-in package manager, you can install familiar utilities like <code>ssh</code>, <code>python</code>, or <code>git</code>, effectively turning your device into a pocket-sized Linux workstation. It's an incredibly flexible tool for anyone who enjoys tinkering, scripting, or automating things — and it shines when it comes to smart home setups. Through simple shell or Python scripts, Termux can monitor or control IoT devices, interact with APIs like <strong>Home Assistant</strong>, or perform scheduled automation tasks completely offline and securely. If you want to take things further, <strong>Tasker</strong> can trigger Termux scripts based on conditions like time, location, or system state, making complex automations both local and private. Pairing Termux with <strong>Syncthing-Fork</strong> allows you to keep scripts, configs, or logs in sync across all your devices without relying on cloud storage. Add <strong>Tailscale</strong> to the mix, and you can securely access your Termux environment or smart home network remotely, no port forwarding or public exposure needed.</p>
+
+        <p>Other open-source apps that really impressed me were NewPipe, OpenReads and Organic Maps. <strong>NewPipe</strong> is an excellent YouTube frontend — works great overall, though it can get a bit clunky when routing through a VPN. <strong>OpenReads</strong> was a pleasant surprise; I'd never used a book-tracking app before, but if you read regularly, it's absolutely worth trying. And as someone who relied exclusively on Google Maps for years, I was genuinely surprised by how well <strong>Organic Maps</strong> performed.</p>
+
+        <p>All of the above mentioned apps are solid enough that I'd recommend them for daily use, even if you're not running GrapheneOS.</p>
+
+        <div class="badges">
+            <a href="https://github.com/beemdevelopment/Aegis"><span class="badge">Aegis</span></a>
+            <a href="https://github.com/deckerst/aves"><span class="badge">AvesLibre</span></a>
+            <a href="https://github.com/bitwarden"><span class="badge">Bitwarden</span></a>
+            <a href="https://github.com/futo-org/android-keyboard"><span class="badge">FUTO Keyboard</span></a>
+            <a href="https://github.com/KDE/kdeconnect-kde"><span class="badge">KDE Connect</span></a>
+            <a href="https://github.com/TeamNewPipe/NewPipe"><span class="badge">NewPipe</span></a>
+            <a href="https://github.com/ImranR98/Obtainium"><span class="badge">Obtainium</span></a>
+            <a href="https://github.com/mateusz-bak/openreads"><span class="badge">OpenReads</span></a>
+            <a href="https://github.com/ethereal-developers/OpenScan"><span class="badge">OpenScan</span></a>
+            <a href="https://github.com/guardianproject/orbot-android"><span class="badge">Orbot</span></a>
+            <a href="https://github.com/organicmaps/organicmaps"><span class="badge">Organic Maps</span></a>
+            <a href="https://github.com/Catfriend1/syncthing-android"><span class="badge">SyncthingFork</span></a>
+            <a href="https://github.com/termux/termux-app"><span class="badge">Termux</span></a>
+            <a href="https://www.thunderbird.net/"><span class="badge">Thunderbird</span></a>
+            <a href="https://github.com/thunderbird/thunderbird-android"><span class="badge">K9 Mail</span></a>
+        </div>
+
+        <h3>🔒 Proprietary / Closed Source Apps</h3>
+
+        <p>Used when no equivalent FOSS or open-source app meets functionality needs — trade-offs acknowledged.</p>
+
+        <p>The apps are presented in order of personal priority.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>App</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Google Play Store</strong></td>
+                    <td>Sandboxed</td>
+                </tr>
+                <tr>
+                    <td><strong>Banking</strong></td>
+                    <td>My local banking app — not listed by name for obvious reasons</td>
+                </tr>
+                <tr>
+                    <td><strong>Paypal</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>WhatsApp</strong></td>
+                    <td>Stay in contect with family and friends</td>
+                </tr>
+                <tr>
+                    <td><strong>Obsidian</strong></td>
+                    <td>Markdown-based note-taking</td>
+                </tr>
+                <tr>
+                    <td><strong>Proton Calendar</strong></td>
+                    <td>Encrypted calendar; privacy-first, seamlessly syncs across devices</td>
+                </tr>
+                <tr>
+                    <td><strong>Tailscale</strong></td>
+                    <td>Mesh VPN; used for remote access and secure networking</td>
+                </tr>
+                <tr>
+                    <td><strong>Spotify</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Netflix</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Discord</strong></td>
+                    <td>Gaming, Dev and Twitch communities</td>
+                </tr>
+                <tr>
+                    <td><strong>Malwarebytes</strong></td>
+                    <td>On-demand malware scanning</td>
+                </tr>
+                <tr>
+                    <td><strong>Loxone</strong></td>
+                    <td>Smart home / security control app; work requirement</td>
+                </tr>
+                <tr>
+                    <td><strong>MS Teams</strong></td>
+                    <td>Work requirement</td>
+                </tr>
+                <tr>
+                    <td><strong>Mobile Games</strong></td>
+                    <td>A few games for when I'm traveling (Gwent, KARDS, Fallout Shelter, etc. ...)</td>
+                </tr>
+                <tr>
+                    <td><strong>Joyn</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Crunchyroll</strong></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🧠 (Proprietary) Apps - Thoughts</h3>
+
+        <p><strong>Obsidian + Syncthing-Fork</strong> deserves a special mention as one of the best privacy-respecting productivity setups I've found. Instead of paying for Obsidian's premium sync service, I use Syncthing-Fork to handle vault synchronization across all my devices — completely free, peer-to-peer, and with no cloud middleman. You get full control: sync your entire vault, cherry-pick specific folders, or set up multiple sync configurations. It's fast, reliable, and keeps everything local-first. Add plugins like Excalidraw for visual thinking and Kanban boards for task management, and you've got a surprisingly powerful low-overhead system for planning, mapping ideas, and staying organized — all without recurring subscriptions or third-party servers touching your data.</p>
+
+        <p><strong>Tailscale</strong>, <strong>KDE Connect</strong>, and <strong>Syncthing-Fork</strong> form a powerful, privacy-respecting trinity for seamless device interaction, file sharing, and remote access. Tailscale creates a secure mesh VPN across all your devices — phone, laptop, desktop, or server — allowing direct, encrypted communication over the internet or local network, without requiring port forwarding or exposing devices publicly. KDE Connect bridges Android and Linux devices over the same network (or via Tailscale), enabling clipboard sync, file transfers, notifications, and even remote input, making day-to-day phone-to-desktop integration smooth and convenient. Syncthing-Fork handles continuous, peer-to-peer file synchronization over local networks or Tailscale, keeping folders in sync between devices in a fully encrypted, self-hosted way, ideal for backups, project sharing, or media libraries. Together, these three apps replace many proprietary cloud services, providing a fully local, encrypted, and self-controlled ecosystem for file sharing, device connectivity, and remote access.</p>
+
+        <p>I use <strong>Proton Calendar</strong> because I wanted a privacy‑focused alternative to Google Calendar. It's fully encrypted, easy to use, and works seamlessly across devices. While it doesn't have all the bells and whistles of some mainstream calendars, it covers the essentials — scheduling, reminders, and recurring events — without sending your data to third‑party trackers. Even though it's not a FOSS app, Proton is a well‑respected company in the privacy community, and their services are widely trusted and secure. Worth noting: use of the app currently depends on an internet connection for full editing and syncing — offline creation or edits are not yet reliably supported.</p>
+
+        <p>I include <strong>Malwarebytes</strong> as a lightweight on-demand malware scanner. While GrapheneOS is very secure by default, I like having the peace of mind of occasionally scanning for malicious APKs, suspicious files, or potentially harmful apps I might sideload. The free version is more than sufficient for this on-demand scanning, but if you want real-time protection — either for an extra layer of security on Android or when using a less secure OS — the paid subscription is, in my opinion, worth it. Malwarebytes can also be used on Windows, where it remains one of the most reliable malware scanners I've personally used. I don't run it constantly on my phone, so it doesn't affect performance, but it's a helpful safety net when testing new software or sharing files.</p>
+
+        <p>Among the proprietary apps, many are essential — online banking, contactless payments, and communication tools are hard to avoid. Others, like streaming services or mobile games, are entirely optional depending on your
