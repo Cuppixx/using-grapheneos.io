@@ -33,8 +33,8 @@ But the <b>number one reason</b> I stick with GrapheneOS — tho this applies to
 ## 🛠️ Installation Is Surprisingly Simple
 
 <div align="justify">
-I was honestly <b>surprised by how smoothly the GrapheneOS installation process went</b>. I expected it to be complicated — especially since this was my first time flashing a custom Android ROM — but it turned out to be far more approachable than I thought. The official <a href="https://grapheneos.org/install/web">Web Installer</a> makes the whole thing simple: it runs right in your browser and walks you through unlocking your bootloader, flashing the OS, and locking it again once everything’s done.<br><br>
-The written instructions on the official website are clear and detailed, though I’ll admit I personally find visual guides easier to follow than text-based ones. Luckily, there are plenty of excellent video walkthroughs online that make the process even clearer. All in all, it took me about one to two hours to get everything set up — not bad at all for a first-time install.<br><br>
+I was honestly <b>surprised by how smoothly the GrapheneOS installation process went</b>. I expected it to be complicated — especially since this was my first time flashing a custom Android ROM — but it turned out to be far more approachable than I thought. The official <a href="https://grapheneos.org/install/web">Web Installer</a> makes the whole thing simple: it runs right in your browser and walks you through unlocking your bootloader, flashing the OS, and locking it again once everything's done.<br><br>
+The written instructions on the official website are clear and detailed, though I'll admit I personally find visual guides easier to follow than text-based ones. Luckily, there are plenty of excellent video walkthroughs online that make the process even clearer. All in all, it took me about one to two hours to get everything set up — not bad at all for a first-time install.<br><br>
 It left me with a good impression overall: the process is straightforward, well-documented, and works reliably even for beginners.
 </div>
 
@@ -80,7 +80,7 @@ The apps are presented in order of personal priority.<br><br>
 
 | Type                   | App                 | Description |
 |------------------------|---------------------|-------------|
-| APK Manager            | **Obtainium**       | Install and update FOSS/open-source apps directly from GitHub, etc. |
+| APK Manager            | **Obtainium**       | Install and update FOSS/open-source apps directly from GitHub |
 | 2FA Code Manager       | **Aegis**           | Alternative to Google Authenticator |
 | Password Manager       | **Bitwarden**       | Secure cloud sync with open-source backend |
 | Gallery                | **AvesLibre**       |  |
@@ -92,9 +92,9 @@ The apps are presented in order of personal priority.<br><br>
 | Device Integration     | **KDE Connect**     | Cross-device sync and file sharing between Android and Linux |
 | Terminal               | **Termux**          | Linux environment and terminal emulator |
 | Book Tracker           | **OpenReads**       |  |
-| Youtube                | **NewPipe**         | Ad-free YouTube frontend with background playback and downloads |
+| Youtube                | **NewPipe**         | Ad-free YouTube and Soundcloud frontend |
 | Weather App            | **Breezy Weather**  |  |
-| Maps                   | **Organic Maps**    | Full offline navigation |
+| Maps                   | **Organic Maps**    | Alternative to Google Maps |
 | Streaming              | **Twire**           | Alternative Twitch client |
 | Fitness Tracker        | **OpenTracks**      |  |
 | Social Media           | **Mastodon**        |  |
@@ -102,10 +102,8 @@ The apps are presented in order of personal priority.<br><br>
 ### 🧠 OpenSource and Native GrapheneOS Apps - Thoughts
 
 <div align="justify">
-The default <b>GrapheneOS App Store</b> isn't really an "app store" in the traditional sense. Its main purpose is to update GrapheneOS system apps and optionally install sandboxed Google Play Services. Yes, you <i>can</i> install <a href="https://accrescent.app/">Accrescent</a> through it — another FOSS app store — but personally, I've never been fully satisfied with either F-Droid or Accrescent.<br>
-That's why I use <b>Obtainium</b>. Tho it's not technically an "app store" either and functions more like a lightweight package manager that pulls APKs directly from trusted upstream sources like GitHub or GitLab. It gives me full control over updates and sources, without relying on the middlemen.<br><br>
-As for some of the other native apps: I've never had much use for the <b>Auditor</b> or <b>Info</b> apps, tho they're nice to have. The default <b>Gallery</b> app is a rough experience — basic and clunky. Thus <b>AvesLibre</b> (or just Aves) has become my go-to media viewer. It feels more like a desktop app, which is a vibe I also appreciate in the native Files app.<br>
-One of the things I really like about GrapheneOS is that it doesn't try to hide the file system. With the <b>Files</b> app, you can easily browse the contents of your device without artificial limitations. You can see hidden and low-level app contents just like you can your normal files like images or pdfs.<br><br>
+The default <b>GrapheneOS App Store</b> isn't really an "app store" in the traditional sense. Its main purpose is to update GrapheneOS system apps and optionally install sandboxed Google Play Services. Yes, you <i>can</i> install <a href="https://accrescent.app/">Accrescent</a> through it — another FOSS app store — but personally, I've never been fully satisfied with either F-Droid or Accrescent. That's why I use <b>Obtainium</b>. Tho it's not technically an "app store" either and functions more like a lightweight package manager that pulls APKs directly from trusted upstream sources like GitHub or GitLab. It gives me full control over updates and sources, without relying on the middlemen.<br><br>
+As for some of the other native apps: I've never had much use for the <b>Auditor</b> or <b>Info</b> apps, tho they're nice to have. The default <b>Gallery</b> app is a rough experience — basic and clunky. Thus <b>AvesLibre</b> (or just Aves) has become my go-to media viewer. It feels more like a desktop app, which is a vibe I also appreciate in the native Files app. With the <b>Files</b> app, you can easily browse the contents of your device without artificial limitations. Which is one of the things I really like about GrapheneOS is that it doesn't try to hide the file system. You can browse hidden and low-level app contents just like you would your normal files.<br><br>
 The rest of the built-in apps generally do their job well enough that I haven't felt the need to replace them.<br><br>
 I did however install <b>OpenScan</b> to complement the default <b>Camera</b> app, since GrapheneOS doesn't include document scanning out of the box. Beyond that, the camera app works fine for my needs. That said, I'm not a photography enthusiast or heavy picture-taker — so if you have a favorite camera app with better image quality or features that meet your requirements, don't hesitate to replace the default. GrapheneOS's camera is solid for basic use, but it's not trying to compete with flagship camera apps.<br><br>
 Special props go to <b>Vanadium</b>, the hardened default browser. It strikes a great balance between usability and security. I haven't felt the need to replace it with something like Brave — which offer more features, sure, but also comes with more settings bloat. Vanadium just works, securely and comfortably.<br><br>
@@ -117,7 +115,7 @@ Among the third-party open-source apps, there's a core group I consider essentia
 <li><b>Orbot</b> – for routing traffic through Tor when needed</li>
 </ul>
 
-These three cover a lot of bases when it comes to digital hygiene and peace of mind.<br>
+These three cover a lot of bases when it comes to digital hygiene and peace of mind.<br><br>
 Orbot is an app you can probably skip if you don't need secure routing, and Aegis isn't necessary unless you use 2FA codes — but Bitwarden should really be a staple in every setup. I personally use Aegis alongside Bitwarden so that if something ever happened to my Bitwarden account, my passwords and 2FA codes wouldn't both be lost at the same time. Plus, I just really like Aegis's design — it feels clean and straightforward. In the end, it mostly comes down to personal preference.<br><br>
 GrapheneOS doesn't ship with voice input out of the box, and most keyboards either require network access or lack features. That's why I use <b>FUTO Keyboard</b> — it offers offline speech-to-text, solid typing feel, and keeps your data fully local. It's one of the few keyboards that hits the sweet spot of usability and privacy.<br><br>
 <b>Thunderbird</b> is still relatively new on mobile as of writing this. It merged with <b>K-9 Mail</b>, though both remain available as separate apps. While Thunderbird is coming along nicely, if you feel dissatisfied or just want to explore your options, K-9 Mail is still actively maintained and worth considering — in fact, some users may find it even more polished for mobile at this stage.<br><br>
@@ -182,7 +180,7 @@ I use <b>Proton Calendar</b> because I wanted a privacy‑focused alternative to
 I include <b>Malwarebytes</b> as a lightweight on-demand malware scanner. While GrapheneOS is very secure by default, I like having the peace of mind of occasionally scanning for malicious APKs, suspicious files, or potentially harmful apps I might sideload. The free version is more than sufficient for this on-demand scanning, but if you want real-time protection — either for an extra layer of security on Android or when using a less secure OS — the paid subscription is, in my opinion, worth it. Malwarebytes can also be used on Windows, where it remains one of the most reliable malware scanners I've personally used. I don't run it constantly on my phone, so it doesn't affect performance, but it's a helpful safety net when testing new software or sharing files.
 <br><br>
 Among the proprietary apps, many are essential — online banking, contactless payments, and communication tools are hard to avoid. Others, like streaming services or mobile games, are entirely optional depending on your lifestyle. Then there are apps that fall somewhere in between, where your needs may vary: Obsidian and Proton Calendar are good examples, though both are among the most privacy-respecting proprietary options available.
-But the one app I haven't found a satisfactory replacement for is <b>Spotify</b>. If you have Spotify Premium, it's hands down the best music streaming experience on mobile — nothing else comes close in terms of library size, features, and overall usability. Without Premium, though, the mobile app is nearly unusable. If you're already paying for it, there's no better option out there.
+But the one app I haven't found a full replacement for is <b>Spotify</b>. If you have Spotify Premium, it's hands down the best music streaming experience on mobile — nothing else comes close in terms of library size, features, and overall usability. Without Premium, though, the mobile app is nearly unusable. If you're already paying for it, there's no better option out there. If you don't use Spotify, I recommend using <b>NewPipe</b> — it covers YouTube and SoundCloud, giving you access to a wide range of content, and with features like background playback and downloads, you can get a surprisingly complete listening experience without relying on proprietary streaming apps.
 <br><br>
 <p align="center">
 <a href="https://www.malwarebytes.com/"><img src="https://img.shields.io/badge/Malwarebytes-blue" /></a>
