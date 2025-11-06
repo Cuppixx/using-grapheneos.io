@@ -26,7 +26,7 @@ The guide includes:
 ## 🔄 Updates
 
 <div align="justify">
-This guide is updated periodically as I discover new apps, refine my setup, or run into noteworthy issues. The web version is always the most current source of information.
+This guide is updated periodically as I discover new apps, refine my setup, or run into noteworthy issues. The deployed page always holds the most current source of information.
 </div>
 
 ## 🤝 Contributing
