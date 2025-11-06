@@ -4,7 +4,6 @@
 <a href="https://grapheneos.org"><img src="https://img.shields.io/badge/GrapheneOS-blue" /></a>
 <a href="https://github.com/GrapheneOS"><img src="https://img.shields.io/badge/Source-blue" /></a>
 <a href="https://grapheneos.org/releases#2025102800"><img src="https://img.shields.io/badge/On%20GOS%20Build-2025102800-blue" /></a>
-<a href="https://github.com/Cuppixx/using-grapheneos.io"><img src="https://img.shields.io/github/last-commit/Cuppixx/Using-GrapheneOS?label=Using%20GrapheneOS%20last%20edited&color=blue" /></a>
 </p>
 
 <div align="justify">
