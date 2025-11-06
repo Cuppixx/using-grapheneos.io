@@ -142,15 +142,27 @@
             font-weight: 600;
         }
 
-        .warning {
-            background-color: rgba(255, 200, 0, 0.1);
-            border-left: 4px solid #ffc800;
+        .info-box {
+            background-color: rgba(33, 136, 255, 0.1);
+            border-left: 4px solid #2188ff;
             padding: 16px;
             margin: 20px 0;
         }
 
-        .warning h3 {
+        .info-box h3 {
             margin-top: 0;
+            color: #2188ff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .info-box {
+                background-color: rgba(88, 166, 255, 0.15);
+                border-left: 4px solid #58a6ff;
+            }
+
+            .info-box h3 {
+                color: #58a6ff;
+            }
         }
     </style>
 </head>
@@ -162,7 +174,6 @@
             <a href="https://grapheneos.org"><span class="badge">GrapheneOS</span></a>
             <a href="https://github.com/GrapheneOS"><span class="badge">Source</span></a>
             <a href="https://grapheneos.org/releases#2025102800"><span class="badge">On GOS Build 2025102800</span></a>
-            <a href="https://github.com/Cuppixx/using-grapheneos.io"><span class="badge">Using GrapheneOS last edited</span></a>
         </div>
 
         <p>Welcome to <strong>Using GrapheneOS</strong>, a collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.</p>
@@ -180,7 +191,7 @@
             <li>Some tips, <del>workarounds</del>, and mini-guides based on experience</li>
         </ul>
 
-        <div class="warning">
+        <div class="info-box">
             <h3>⚠️ Heads-Up</h3>
             <p>Before getting into the first major topic, I want to clear up a common misconception about GrapheneOS. While it's well-known as a <em>privacy-focused Android fork</em>, <strong>you don't need to be a hardcore privacy enthusiast to benefit from using it</strong>.</p>
 
