@@ -32,8 +32,10 @@ This guide is updated periodically as I discover new apps, refine my setup, or r
 ## 🤝 Contributing
 
 <div align="justify">
-Found a typo? Have a suggestion? Feel free to open an issue or submit a pull request. This is a personal guide, but I'm happy to incorporate helpful feedback.
+Found a typo? Have a suggestion? Feel free to open an issue or submit a pull request. This is a personal guide, but I'm happy to incorporate helpful feedback.<br><br>
 </div>
+
+**See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute.**
 
 ## ⚖️ Disclaimer
 
