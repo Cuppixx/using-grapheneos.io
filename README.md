@@ -7,26 +7,26 @@
 </p>
 
 <div align="justify">
-Welcome to <b>Using GrapheneOS</b>, a collection of notes, apps, configs, and insights from my experience using GrapheneOS as a daily driver.<br><br>
-While the web is full of reviews, this repo aims to cut through some of the noise and give yet another, user-level perspective.
-I'll cover the open-source apps I rely on, the commercial software I haven't found good <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> or open-source replacements for, the settings and tweaks I personally like, and even the small annoyances that come up along the way.<br><br>
-Whether you're considering switching to GrapheneOS, already jumped ship, or just curious about using a privacy-focused, de-googled Android fork — this hopefully helps to get some insights.
+<p>While the web is full of reviews, this repo aims to cut through some of the noise and give yet another, user-level perspective. I'll cover the open-source apps I rely on, the commercial software I haven't found good <a href="https://en.wikipedia.org/wiki/Free_and_open-    source_software">FOSS</a> or open-source replacements for, the settings and configurations I personally use, and even the small annoyances that I've run into over time.</p>
+  
+<p>Whether you're considering switching to GrapheneOS, have already jumped ship, or are just curious about using <strong>a privacy-focused, de-googled Android fork</strong> — this hopefully helps to get some insights.</p>
 </div>
 
 ## 🧭 What You'll Find Here
 
 - A curated list of all the apps I use
-- ~~My personal GrapheneOS settings and configurations~~
+- ~~Specific GrapheneOS settings and configurations I use~~
 - Some notes on what works well and what doesn't
 - Some tips, ~~workarounds~~, and mini-guides based on experience
 
 ### ⚠️ Heads-Up
 
 <div align="justify">
-Before getting into the first major topic, I want to clear up a common misconception about GrapheneOS. While it's well-known as a <i>privacy-focused Android fork</i>, <b>you don't need to be a hardcore privacy enthusiast to benefit from using it</b>.<br><br>
-Yes, GrapheneOS is built with strong security and privacy principles at its core — but that doesn't mean you <i>must</i> give up Google services or only use open-source apps to enjoy it. In fact, <b>you can absolutely use GrapheneOS while still relying on Google apps and other proprietary software</b>, and it works just fine.<br><br>
-I personally use GrapheneOS in a pretty casual way. I do appreciate the built-in privacy and security features, but I'm also perfectly fine with using the Google Play Store — thanks to GrapheneOS's sandboxed Google Play compatibility layer — for a good chunk of my apps.<br><br>
-But the <b>number one reason</b> I stick with GrapheneOS — tho this applies to most custom Android OSes — is how <b>clean</b> it is. No bloat, no preinstalled junk I didn't ask for and can't remove (looking at you Facebook), and no forced usage of certain apps. Just a fast, minimalist system that stays out of my way. And best of all, no more mysterious background processes eating up resources with no explanation. <b>My phone runs what I tell it to run — nothing more, nothing less</b>.
+<p>Before getting into the first major topic, I want to clear up a common misconception about GrapheneOS: While Graphene is well-known as a privacy-focused Android fork, <strong>you don't need to be a hardcore privacy enthusiast to benefit from using it</strong>.</p>
+
+<p>Yes, GrapheneOS is built with strong security and privacy principles at its core — but that doesn't mean you <em>must</em> give up Google services or only use open-source apps to enjoy it. In fact, <strong>you can absolutely use GrapheneOS while still relying on Google apps and other proprietary software</strong>, and it works just fine. I personally do appreciate the built-in privacy and security features, but I'm also perfectly fine with using the Google Play Store — thanks to GrapheneOS's sandboxed Google Play compatibility layer — for a good chunk of my apps.</p>
+
+<p>But the reason I still stick with GrapheneOS — tho this applies to most custom Android OSes — is how <strong>clean</strong> it is. <strong>No bloat</strong>, no preinstalled junk I didn't ask for and can't remove (looking at you Facebook), and no forced usage of certain apps. Just a fast, minimalist system that stays out of my way. And best of all, no more mysterious background processes eating up resources with no explanation. <strong>My phone runs what I tell it to run — nothing more, nothing less</strong>.</p>
 </div>
 
 ## 🛠️ Installation Is Surprisingly Simple
