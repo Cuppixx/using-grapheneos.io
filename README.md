@@ -18,6 +18,7 @@ Whether you're considering switching to GrapheneOS, have already jumped ship, or
 **[Read the full guide here](https://cuppixx.github.io/using-grapheneos.io/)**
 
 The guide includes:
+
 - A curated list of all the apps I use
 - ~~Specific GrapheneOS settings and configurations I use~~
 - Some notes on what works well and what doesn't
@@ -32,7 +33,7 @@ This guide is updated periodically as I discover new apps, refine my setup, or r
 ## 🤝 Contributing
 
 <div align="justify">
-Found a typo? Have a suggestion? Feel free to open an issue or submit a pull request. This is a personal guide, but I'm happy to incorporate helpful feedback.<br><br>
+Found a typo? Have a suggestion? Feel free to open an issue or submit a pull request. This is a personal guide, but I'm happy to incorporate most feedback.<br><br>
 </div>
 
 **See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute.**

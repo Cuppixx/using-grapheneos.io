@@ -1,0 +1,7 @@
+{
+  "MD001": false, // Heading levels
+  "MD013": false, // Line length
+  "MD033": false, // Inline HTML
+  "MD041": false, // First line in a file should be a top-level heading
+  "MD045": false  // Images should have alt text
+}
